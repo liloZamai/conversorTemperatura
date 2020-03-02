@@ -15,19 +15,37 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/digite_um_valor"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"/>
 
-    <Button
-        android:id="@+id/btn_farenheit_para_celsius"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/farenheit_para_celsius"
-        android:textColor="@android:color/white"
-        android:padding="6dp"
-        android:textAllCaps="false"
-        android:background="@drawable/btn_background_round"
-        android:layout_gravity="center"/>
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btn_farenheit_para_celsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/farenheit_para_celsius"
+            android:padding="6dp"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btn_celsius_para_farenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/farenheit_para_celsius"
+            android:padding="6dp"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tv_convertido"
