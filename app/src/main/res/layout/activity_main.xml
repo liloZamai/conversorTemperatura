@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/digite_um_valor"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btn_farenheit_para_celsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/farenheit_para_celsius"
+        android:textColor="@android:color/white"
+        android:padding="6dp"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_background_round"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_convertido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:textColor="@color/convert_value"
+        android:textStyle="bold"/>
+
+
+
+</LinearLayout>

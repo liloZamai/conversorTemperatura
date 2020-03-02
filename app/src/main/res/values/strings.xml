@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ConversorTemperatura</string>
+    <string name="digite_um_valor">Digite um valor</string>
+    <string name="farenheit_para_celsius">Farenheit para Celsius</string>
+</resources>
